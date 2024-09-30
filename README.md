@@ -102,13 +102,13 @@ The network consists of two main subnets: `192.168.130.0/24` and `10.0.0.0/24`, 
 
 - **Threat Hunter & Docker Admin** (`192.168.130.0/24`): Handles threat detection and Docker management.
 - **Docker Swarm** (`10.0.0.0/24`): Orchestrates containers across a node cluster.
-- **Minio** (`10.0.4.0/24`): Object storage server.
+- **Minio** (`10.0.4.0/24`): Object storage server (for artifacts : files, malware samples ...).
 - **Portainer Client** (`10.0.0.3`): Manages Docker environments.
 - **Portainer Agent** (`10.0.4.3`): Assists with container management.
-- **Redis** (`10.0.1.12`): In-memory data store.
+- **Redis** (`10.0.1.12`): In-memory data store (for caching).
 - **OpenCTI** (`10.0.1.46:8080`): Threat intelligence platform.
 - **RabbitMQ** (`10.0.1.28`): Message broker for component communication.
-- **Elasticsearch** (`10.0.1.5:9200`): Data storage and search engine.
+- **Elasticsearch** (`10.0.1.5:9200`): Data storage and search engine. (main database)
 
 This architecture ensures smooth integration between container management, data storage, and threat intelligence tools.
 
